@@ -286,11 +286,9 @@ font-size:1.3em;
 height:-webkit-fit-content;
 height:-moz-fit-content;
 height:fit-content;
-min-height:70vh;
 padding:0!important;
 position:relative;
 text-shadow:1px 1px 5px #141414;
-width:60vw
 }
 
 .layout-mobile .infoWrapper {
@@ -1185,7 +1183,8 @@ color:var(--accent)
 
 .button-flat {
 border-radius:var(--rounding)!important;
-text-shadow:0 0 10px #141414
+text-shadow:0 0 10px #141414;
+background-color: #101010;
 }
 
 .raised {
@@ -1972,9 +1971,15 @@ width:fit-content!important
 }
 
 .layout-desktop #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer,.layout-tv #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer {
-height:10vh;
 margin:0;
-padding:0
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+.detailButton, .mainDetailButtons
+{
+  gap: 10px;
 }
 
 :not(.hide) + .detailPageWrapperContainer .parentName,:not(.hide) + .detailPageWrapperContainer .parentNameLast,:not(.hide) + .detailPageWrapperContainer .parentName > *,:not(.hide) + .detailPageWrapperContainer .parentNameLast > * {
@@ -2018,10 +2023,6 @@ display:block
 
 .hide + .detailPageWrapperContainer .parentName,.hide + .detailPageWrapperContainer .parentNameLast {
 display:block!important
-}
-
-.itemName {
-margin:.5em 0!important
 }
 
 .cardText > .textActionButton {
@@ -2108,7 +2109,6 @@ z-index:1!important
 .layout-desktop .itemDetailsGroup {
 font-size:large!important;
 max-width: 23vw;
-margin-bottom: 6%;
 }
 
 .layout-desktop .moreFromSeasonSection {
@@ -2195,7 +2195,7 @@ width:44vw!important;
 border-radius:105px;
 margin-left:-30vw;
 margin-top:-10vh;
-padding:10vh 2vw 2vh 30vw;
+padding:10vh 2vw 0vh 30vw;
 }
 
 .progressring-spiner {
@@ -2404,14 +2404,6 @@ color:var(--accent)!important;
 background:var(--accent);
 }
 
-.endsAtText {
-display:none!important;
-}
-
-.endsAt {
-display:none!important;
-}
-
 :not(.layout-mobile) body:not(.idle) .htmlvideoplayer {
     mask-image: url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@main/screenshots/trailer-gradient.png");
     -webkit-mask-image: url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@main/screenshots/trailer-gradient.png");
@@ -2515,8 +2507,16 @@ margin:0 -1.5em 0 0;
 margin:0 -1.4em 0 0;
 }
 
+.detailsGroupItem, .trackSelections .selectContainer
+{
+  width: 44em;
+}
+
 .layout-desktop .mainDetailButtons {
 margin-left:0!important;
+position: absolute;
+bottom: 0;
+left: 0;
 }
 
 .detailButton-icon {
@@ -2528,10 +2528,6 @@ width:1em;
 
 span.material-icons.detailButton-icon.play_arrow {
 color:var(--accent)!important;
-}
-
-.layout-desktop span.material-icons.detailButton-icon.play_arrow {
-    font-size:2.8em!important;
 }
 
 .layout-mobile span.material-icons.detailButton-icon.play_arrow {
