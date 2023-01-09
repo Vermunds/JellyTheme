@@ -1975,6 +1975,7 @@ margin:0;
 display: flex;
 flex-direction: column;
 align-items: flex-start;
+height: auto;
 }
 
 .detailButton, .mainDetailButtons
@@ -2514,9 +2515,6 @@ margin:0 -1.4em 0 0;
 
 .layout-desktop .mainDetailButtons {
 margin-left:0!important;
-position: absolute;
-bottom: 0;
-left: 0;
 }
 
 .detailButton-icon {
