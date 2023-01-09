@@ -2064,10 +2064,6 @@ div#itemDetailPage {
     overflow-x: hidden;
 }
 
-.layout-desktop div#itemDetailPage {
-    margin-top: 2vh !important;
-}
-
 .layout-desktop .collectionItems {
 margin-top:-30%
 }
@@ -2197,6 +2193,10 @@ border-radius:105px;
 margin-left:-30vw;
 margin-top:-10vh;
 padding:10vh 2vw 0vh 30vw;
+max-width: 920px;
+text-align: justify;
+text-justify: inter-word;
+hyphens: auto;
 }
 
 .progressring-spiner {
@@ -2409,6 +2409,7 @@ background:var(--accent);
     mask-image: url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@main/screenshots/trailer-gradient.png");
     -webkit-mask-image: url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@main/screenshots/trailer-gradient.png");
     transition: 2500ms;
+    object-fit: cover;
 }
 
 .hide-scroll .htmlvideoplayer {
@@ -2552,10 +2553,6 @@ width:67vw!important;
     left: 10vw !important;
     top: -35vh !important;
     width: 80vw !important;
-}
-
-.nextUpItems .card.overflowBackdropCard.card-hoverable.card-withuserdata :not(.layout-mobile) {
-width:18vw;
 }
 
 .playstatebutton-icon-played {
