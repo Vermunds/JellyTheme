@@ -2057,7 +2057,9 @@ filter:blur(18px) saturate(120%) contrast(120%) brightness(60%)
 
 
 div#itemDetailPage {
-background:#00000000
+    background: #0005;
+    position: fixed;
+    overflow-x: hidden;
 }
 
 .layout-desktop div#itemDetailPage {
@@ -2122,10 +2124,6 @@ max-width:27em!important
 display:none
 }
 
-.selectContainer.selectVideoContainer {
-display:none
-}
-
 .mainDetailButtons {
 margin-left:-1vh!important;
 margin-top:1.5vh!important
@@ -2169,10 +2167,6 @@ background:#700f6d
 display:none
 }
 
-.originalTitle {
-display:none
-}
-
 
 .layout-mobile .headerCastButton {
 display:block!important
@@ -2198,12 +2192,10 @@ width:44vw!important;
 }
 
 .layout-desktop .detailSection {
-background-color:#000000de;
 border-radius:105px;
 margin-left:-30vw;
 margin-top:-10vh;
 padding:10vh 2vw 2vh 30vw;
-width:44vw!important
 }
 
 .progressring-spiner {
@@ -2420,25 +2412,10 @@ display:none!important;
 display:none!important;
 }
 
-:not(.layout-mobile) body:not(.idle):not(.hide-scroll) .videoPlayerContainer {
-    margin-left: -75vw !important;
-    margin-right: -18vw;
-    max-height: 81vh;
-    max-width: 78vw;
-    left: 25vw;
-    position: sticky !important;
-    height: 81vh;
-    margin-top: 10vh;
-}
-
 :not(.layout-mobile) body:not(.idle) .htmlvideoplayer {
     mask-image: url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@main/screenshots/trailer-gradient.png");
     -webkit-mask-image: url("https://cdn.jsdelivr.net/gh/ShiniGandhi/JellyTheme@main/screenshots/trailer-gradient.png");
     transition: 2500ms;
-    -webkit-mask-size: 156vh;
-    mask-size: 156vh;
-    -webkit-mask-position: 0% 100%;
-    mask-position: 0% 100%;
 }
 
 .hide-scroll .htmlvideoplayer {
@@ -2519,7 +2496,6 @@ z-index:3;
 
 .layout-desktop .trackSelections {
 font-size:small!important;
-margin-left:50vh;
 max-width:27em!important;
 }
 
